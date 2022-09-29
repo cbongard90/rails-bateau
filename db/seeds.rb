@@ -66,7 +66,7 @@ end
 
 puts "Creating 4 admins"
 admin1 = User.new(email: "adminh@test.com", password: "password", first_name:"Houzair", last_name:"Koussa", teacher: true, admin: true)
-file1 = URI.open('https://kitt.lewagon.com/placeholder/users/houzyk')
+file1 = URI.open('https://kitt.lewagon.com/placeholder/users/random')
 admin1.photo.attach(io: file1, filename: "admin1" , content_type: 'image/jpg')
 admin1.save
 
